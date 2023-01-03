@@ -1,8 +1,11 @@
 from flask import Flask
 from flask import jsonify
+from flask_cors import CORS
 import rahmah_makan_vision
 
+
 app = Flask(__name__)
+CORS(app)
 
 @app.route('/api/fridges')
 def index():
