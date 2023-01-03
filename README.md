@@ -23,7 +23,7 @@ pip install cvlib
     - If we are using multiple webcams then, the client can also specify camera number, otherwise all fridges   will have the same camera
 
 ```
-@app.route('/')
+@app.route('/api/fridges')
 def index():
 
     objects_num, labels, img, bnd_box, cnfdce = rahmah_makan_vision.get_objects_num_with_labels()
